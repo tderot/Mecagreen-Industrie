@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <body>
+        <div class="row header">
+          <div class="col-md-offset-4 col-md-4">
+            <img src="{{ asset('pictures/logoA.png') }}" class="logoHeader" alt="MecaGreen">
+          </div>
+        </div>
+
+        <div class="titre">
+          <div class="row">
+
+              <h2>CONCEPTEUR DE PROCESS </br>
+               CONSTRUCTEUR DE MACHINES INDUSTRIELLES</h2>
+              <p class="blinking">Notre site est actuellement en cours de réalisation.</p>
+
+          </div>
+        </div>
+        <div id="parallax-world-of-ugg">
+          <section>
+            <div class="parallax-one">
+            </div>
+          </section>
+        </div>
+        <div class="champsAction">
+              <div class="row lineAction">
+               <div class="">
+                 <div class="col-md-12">
+                  <h3 >NOS CHAMPS D'ACTION</h3>
+                  </div>
+                  <div class="col-md-offset-2 col-md-4">
+                    <p class="carréAction"><span class="titreAction">Criblage</span><p>
+                  </div>
+                  <div class="col-md-offset- col-md-4">
+                    <p class="carréAction2">Nettoyage<p>
+                  </div>
+                </div>
+               </div>
+            </div>
+
+            <div id="parallax-world-of-ugg">
+              <section>
+                <div class="parallax-two">
+                </div>
+              </section>
+            </div>
+
+          <div class="middleContact">
+
+            <div class="row">
+
+              <div class="col-md-offset-4 col-md-4">
+               <p class="textContact">Le site étant en construction,<br> pour toute demande d'informations n'hésitez pas...</p>
+              </div>
+             <div class="col-md-offset-5 col-md-4">
+               <button type="button" class="btn btn-lg btnContact" data-toggle="modal" data-target="#mail">
+                CONTACTER NOUS
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Contacter Mecagreen</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form method="post" action="mailer">
+                        <div class="form-group">
+                          <label for="Nom">Nom</label>
+                          <input type="text" name="nom" class="form-control" id="Nom" placeholder="">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Votre email : </label>
+                          <input type="email" name="mail" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="telephone">Numero de téléphone</label>
+                          <input type="text"  name="tel" class="form-control" id="telephone" placeholder="">
+                        </div>
+                        <div class="form-group">
+                          <label for="textarea">Veuillez saisir votre message :</label>
+                          <textarea class="form-control" name="text" id="textarea" rows="3"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                          <input type="submit" class="btn btn-default" value="envoyer">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Modal -->
+
+
+       <footer>
+        <div class="row">
+         <div class="col-md-offset-3 col-md-1">
+           <img src="{{ asset('pictures/logoB.png') }}" class="logoFooter" alt="MecaGreen">
+         </div>
+         <div class="col-md-offset- col-md-4">
+           <p class="textFooter"><span class="nameFooter">Mecagreen Industrie</span> <br>
+           32 route de Loriges-03500 Saint-Pourcain-sur-Sioule<br>
+           contact@mecagreen.fr - 06 07 53 60 64</p>
+         </div>
+       </div>
+      </footer>
+
+{% endblock %}
+{% block javascripts %}
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('bootstrap/js/jquery.js') }}"></script>
+
+{% endblock %}
